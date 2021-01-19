@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>帖子详情页</h2>
+<p>请实现我!</p>
+
+<p id="demo"></p>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const image = urlParams.get('image');
+const body = urlParams.get('body');
+const title = urlParams.get('title');
+document.getElementById("demo").innerHTML = 'URL参数:' + image + body + title;
+</script>
+
+</body>
+</html> 

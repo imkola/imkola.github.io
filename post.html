@@ -3,6 +3,14 @@
 <!DOCTYPE html>
 <html>
 <body>
+  
+  <head>
+
+<div id='wx_pic' style='margin:0 auto;display:none;'>
+
+  <img id='wx_pic_img' src='i/300.jpg'>
+
+</div>
 
 <h2>帖子详情页</h2>
 <p>请实现我!</p>
@@ -14,7 +22,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const image = urlParams.get('image');
 const body = urlParams.get('body');
 const title = urlParams.get('title');
-document.getElementById("demo").innerHTML = 'URL参数:' + image + body + title;
+document.getElementById("wx_pic").innerHTML = 'URL参数:' + image + body + title;
+document.getElementById("wx_pic_img").src = image;
 </script>
 
 </body>
